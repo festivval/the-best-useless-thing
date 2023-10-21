@@ -18,29 +18,21 @@
         background-position: center;
     }
 
+    p {
+      margin-top: 0;
+    }
+
     #header {
         position: fixed;
         background-color: #91DF96;
         width:100%;
         white-space: nowrap;
-        
     }
 
     #footer {
         background-color: #91DF96;
         width:100%;
         white-space: nowrap;
-        
-    }
-
-    #header img {
-        height:50px;
-    }
-
-    #logo {
-        height:50px;
-        float:left;
-        padding:2px;
     }
 
     #header a:link {
@@ -62,6 +54,27 @@
         background-color: #79E380;
     }
 
+    #logo {
+      float:left;
+    }
+
+    #logo p {
+        float:left;
+        font-size:35px;
+        margin:0;
+        padding-left:5px;
+    }
+    #logo img {
+      float:left;
+        height:50px;
+        padding-top:4px;
+    }
+    
+    #logo:hover {
+      
+      color:yellow;
+    }
+
     #ducks {
         width: 20vw;
         height: auto;
@@ -69,7 +82,7 @@
         padding: 10vw;
     }
 
-    p {
+    #title {
         color:#0079F3;
         font-size: 30vh;
         margin-top: 15vh;
@@ -99,7 +112,9 @@
 
     <center><div id='header'>
         
-      <a id="logo" title="QUACK" href="home.html"><img id="logo" src='images/duck.jpg'></a>
+      <a id='logo' style="padding-left:5px;padding-right:15px" title="QUACK" href="index.html">
+        <img src='images/duck.jpg'><p>sillyducks</p>
+      </a>
       <a title="About Us" href="aboutUs.html">About Us</a>
       <a title="Shop" href="shop hack wave.html">Shop</a>
       
@@ -107,7 +122,7 @@
     <br>
 
     <center>
-      <p>SILLY<br>DUCKS<br>SHOP</p>
+      <p id="title">SILLY<br>DUCKS<br>SHOP</p>
       <br><br>
       <a id=button href="shop hack wave.html">Shop Now</a>
       <br><br><br><br>
