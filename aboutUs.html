@@ -1,66 +1,85 @@
 <!DOCTYPE html>
-<html>
-    
+<html lang="en">
+    <head>
+        <title>About Us</title>
+        <link rel="icon" href="images/duck_sq.jpg">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playpen Sans">
+    </head>
     
 
     <style>
         body
         {
             background-color: lavender;
+            margin:0;
         }
 
         #header {
-        position: fixed;
-        background-color: #91DF96;
-        width:100%;
-        white-space: nowrap;
-        
+            position: fixed;
+            background-color: #91DF96;
+            width:100%;
+            white-space: nowrap;
+            z-index: 100;
+        }
+
+        #footer {
+            background-color: #91DF96;
+            width:100%;
+            white-space: nowrap;
         }
 
         #header a:link {
-        font-family: 'Playpen Sans', sans-serif;
-        font-size: 40px;
-        color: darkgreen;
-        background-color: #82D788;
-        text-decoration: none;
-        padding-right: 30px;
-        padding-left: 30px;
-    }
+            font-family: 'Playpen Sans', sans-serif;
+            font-size: 40px;
+            color: darkgreen;
+            background-color: #82D788;
+            text-decoration: none;
+            padding-right: 30px;
+            padding-left: 30px;
+        }
 
-    #header a:hover {
-        color: yellow;
-        background-color: #79E380;
-    }
+        #header a:visited {
+            color: green;
+            background-color: #82D788;
+        }
+        #header a:hover, a:active {
+            color: yellow;
+            background-color: #79E380;
+        }
 
-    #header a:visited {
-        color: green;
-        background-color: #82D788;
-    }
-    #logo {
-        height:50px;
+        #logo {
         float:left;
-        padding:2px;
-    }
+        }
+
+        #logo p {
+            float:left;
+            font-size:35px;
+            margin:0;
+            padding-left:5px;
+        }
+        #logo img {
+        float:left;
+            height:50px;
+            padding-top:4px;
+        }
+        
+        #logo:hover {
+        
+        color:yellow;
+        }
     </style>
    
     <body>  
-        <center>
-            <h1>
-                <div id='header'>
-                <a id="logo" title="QUACK" href="home.html"><img id="logo" src='images/duck.jpg'></a>
-                <a title="About Us" href="aboutUs.html">About Us</a>
-                <a title="Shop" href="shop hack wave.html">Shop</a>
-                </div>
-                <br>
-                <br>
-                
-                &#128513; About Us &#128513; 
-
-
-             
-            </h1>
-        </center>
+        <center><div id='header'>
         
+            <a id='logo' style="padding-left:5px;padding-right:15px" title="QUACK" href="index.html">
+              <img src='images/duck.jpg'><p>sillyducks</p>
+            </a>
+            <a title="About Us" href="aboutUs.html">About Us</a>
+            <a title="Shop" href="shop hack wave.html">Shop</a>
+            
+          </div></center>
+        <br><br><br><br>
         <center>
             <p>
                 We are a group that seek to send joy to all <br> with our amazing creation, for we have invented <br>the number 1# usless thing so <br>we are hoping you all will enjoy our creation.
