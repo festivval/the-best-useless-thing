@@ -7,11 +7,15 @@
       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playpen Sans">
     </head>
     <body bgcolor="#304669">
-      <div id='header'>
-        <a id="logo" title="QUACK" href="index.html"><img id="logo" src='images/duck.jpg'></a>
+      <center><div id='header'>
+        
+        <a id='logo' style="padding-left:5px;padding-right:15px" title="QUACK" href="index.html">
+          <img src='images/duck.jpg'><p>sillyducks</p>
+        </a>
         <a title="About Us" href="aboutUs.html">About Us</a>
         <a title="Shop" href="shop hack wave.html">Shop</a>
-      </div>
+        
+      </div></center>
 
 <script>
   function playSound()
@@ -71,37 +75,58 @@
     }
 
     #header {
-        position: fixed;
-        background-color: #91DF96;
-        width:100%;
-        white-space: nowrap;
-        z-index: 100;
+            position: fixed;
+            background-color: #91DF96;
+            width:100%;
+            white-space: nowrap;
+            z-index: 100;
+        }
+
+        #footer {
+            background-color: #91DF96;
+            width:100%;
+            white-space: nowrap;
         }
 
         #header a:link {
-        font-family: 'Playpen Sans', sans-serif;
-        font-size: 40px;
-        color: darkgreen;
-        background-color: #82D788;
-        text-decoration: none;
-        padding-right: 30px;
-        padding-left: 30px;
-    }
+            font-family: 'Playpen Sans', sans-serif;
+            font-size: 40px;
+            color: darkgreen;
+            background-color: #82D788;
+            text-decoration: none;
+            padding-right: 30px;
+            padding-left: 30px;
+        }
 
-    #header a:hover {
-        color: yellow;
-        background-color: #79E380;
-    }
+        #header a:visited {
+            color: green;
+            background-color: #82D788;
+        }
+        #header a:hover, a:active {
+            color: yellow;
+            background-color: #79E380;
+        }
 
-    #header a:visited {
-        color: green;
-        background-color: #82D788;
-    }
-    #logo {
-        height:50px;
+        #logo {
         float:left;
-        padding:2px;
-    }
+        }
+
+        #logo p {
+            float:left;
+            font-size:35px;
+            margin:0;
+            padding-left:5px;
+        }
+        #logo img {
+        float:left;
+            height:50px;
+            padding-top:4px;
+        }
+        
+        #logo:hover {
+        
+        color:yellow;
+        }
 </style>
     <br>
     <br>

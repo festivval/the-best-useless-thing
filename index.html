@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>sillyducks shop</title>
-    <link rel="icon" href="images/duck_sq.jpg">
 
+    <link rel="icon" href="images/duck_sq.jpg">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playpen Sans">
   
   <style>
@@ -17,59 +17,8 @@
         background-attachment:fixed;
         background-position: center;
     }
-
-    #header {
-        position: fixed;
-        background-color: #91DF96;
-        width:100%;
-        white-space: nowrap;
-        z-index: 100;
-    }
-
-    #footer {
-        background-color: #91DF96;
-        width:100%;
-        white-space: nowrap;
-        
-    }
-
-    #header img {
-        height:50px;
-    }
-
-    #logo {
-        height:50px;
-        float:left;
-        padding:2px;
-    }
-
-    #header a:link {
-        font-family: 'Playpen Sans', sans-serif;
-        font-size: 40px;
-        color: darkgreen;
-        background-color: #82D788;
-        text-decoration: none;
-        padding-right: 30px;
-        padding-left: 30px;
-    }
-
-    #header a:visited {
-        color: green;
-        background-color: #82D788;
-    }
-    #header a:hover, a:active {
-        color: yellow;
-        background-color: #79E380;
-    }
-
-    #ducks {
-        width: 20vw;
-        height: auto;
-        object-fit:fill;
-        padding: 10vw;
-    }
-
-    p {
+    
+    h1 {
         color:#0079F3;
         font-size: 30vh;
         margin-top: 15vh;
@@ -78,6 +27,60 @@
         text-shadow: -0.5vh 0.5vh #4BA4FF;
         min-width: 100px;
     }
+
+    #header {
+            position: fixed;
+            background-color: #91DF96;
+            width:100%;
+            white-space: nowrap;
+            z-index: 100;
+        }
+
+        #footer {
+            background-color: #91DF96;
+            width:100%;
+            white-space: nowrap;
+        }
+
+        #header a:link {
+            font-family: 'Playpen Sans', sans-serif;
+            font-size: 40px;
+            color: darkgreen;
+            background-color: #82D788;
+            text-decoration: none;
+            padding-right: 30px;
+            padding-left: 30px;
+        }
+
+        #header a:visited {
+            color: green;
+            background-color: #82D788;
+        }
+        #header a:hover, a:active {
+            color: yellow;
+            background-color: #79E380;
+        }
+
+        #logo {
+        float:left;
+        }
+
+        #logo p {
+            float:left;
+            font-size:35px;
+            margin:0;
+            padding-left:5px;
+        }
+        #logo img {
+        float:left;
+            height:50px;
+            padding-top:4px;
+        }
+        
+        #logo:hover {
+        
+        color:yellow;
+        }
 
     #button {
       background-color: #82D788;
@@ -99,7 +102,9 @@
 
     <center><div id='header'>
         
-      <a id="logo" title="QUACK" href="home.html"><img id="logo" src='images/duck.jpg'></a>
+      <a id='logo' style="padding-left:5px;padding-right:15px" title="QUACK" href="index.html">
+        <img src='images/duck.jpg'><p>sillyducks</p>
+      </a>
       <a title="About Us" href="aboutUs.html">About Us</a>
       <a title="Shop" href="shop hack wave.html">Shop</a>
       
@@ -107,7 +112,7 @@
     <br>
 
     <center>
-      <p>SILLY<br>DUCKS<br>SHOP</p>
+      <h1>SILLY<br>DUCKS<br>SHOP</h1>
       <br><br>
       <a id=button href="shop hack wave.html">Shop Now</a>
       <br><br><br><br>
