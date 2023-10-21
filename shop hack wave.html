@@ -9,6 +9,7 @@
 <br>
 <br>
 
+<!--
 <style>
   .grid-container {
       display: grid;
@@ -30,15 +31,115 @@ img {
 </style>
 
 <div class="grid-container">
-  <img src="shop img hack wave/shadow duck 1.jpg.jpg">
+  <img src="shop img hack wave/shadow duck 1.jpg">
   <img src="shop img hack wave/artist duck 3.jpg">
-  <img src="img hack wave/marriage duck 4.jpg">
-  <img src="img hack wave/groovy pirate duck 5.jpg">
-  <img src="img hack wave/darth duck 2.jpeg">
-  <img src="img hack wave/duck 6.jpg">
-  <img src="img hack wave/duck 7.jpg">
-  <img src="img hack wave/duck 8.jpg">
+  <img src="shop img hack wave/marriage duck 4.jpg">
+  <img src="shop img hack wave/groovy pirate duck 5.jpg">
+  <img src="shop img hack wave/darth duck 2.jpeg">
+  <img src="shop img hack wave/duck 6.jpg">
+  <img src="shop img hack wave/duck 7.jpg">
+  <img src="shop img hack wave/duck 8.jpg">
 </div>
+-->
+
+<style>
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  grid-template-areas:
+    "image1 image1 image1 image1"
+}
+
+.image1 {
+  grid-area: image1;
+}
+figure {
+  margin:1px;
+  display:inline-block;
+  vertical-align:top;
+  text-align:center;
+  position:relative;
+  padding-bottom:2.8em;
+}
+figure img {
+  display:block;
+  width:20vh;
+  height:auto;
+}
+figcaption{
+  position:absolute;
+  bottom:0;
+  left:0;
+  right:0;
+  padding:0.2em 2px;
+  min-height:2.4em;
+}
+figcaption p {
+  margin:0;
+}
+#gridimg{
+  width:50vw;
+  height:50vh;
+  margin:2;
+}
+body {
+  text-align:center;
+  color: white;
+}
+</style>
+
+<div id="grid-container">
+  <figure>
+    <img src="shop img hack wave/shadow duck 1.jpg" />
+    <figcaption>
+      <p>Shadow Duck</p>
+    </figcaption>
+  </figure>
+  <figure>
+    <img src="shop img hack wave/artist duck 3.jpg" />
+    <figcaption>
+      <p>Artist Duck</p>
+    </figcaption>
+  </figure>
+  <figure>
+    <img src="shop img hack wave/marriage duck 4.jpg" />
+    <figcaption>
+      <p>Marriage Duck</p>
+    </figcaption>
+  </figure>
+  <figure>
+    <img src="shop img hack wave/groovy pirate duck 5.jpg"/>
+    <figcaption>
+      <p>Groovy Priate Duck</p>
+    </figcaption>
+  </figure>
+  <figure>
+    <img src="shop img hack wave/darth duck 2.jpeg" />
+    <figcaption>
+      <p>Darth Vade Duck</p>
+    </figcaption>
+  </figure>
+  <figure>
+    <img src="shop img hack wave/duck 6.jpg" />
+    <figcaption>
+      <p>Batman</p>
+    </figcaption>
+  </figure>
+  <figure>
+    <img src="shop img hack wave/duck 7.jpg" />
+    <figcaption>
+      <p>Yeehaw Duck</p>
+    </figcaption>
+  </figure>
+  <figure>
+    <img src="shop img hack wave/duck 8.jpg" />
+    <figcaption>
+      <p>Liberty Duck</p>
+    </figcaption>
+  </figure>
+</div>
+
 
 
 
