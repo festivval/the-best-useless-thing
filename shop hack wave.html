@@ -16,6 +16,19 @@
 <br>
 <br>
 
+<script>
+  function playSound()
+  {
+      var audio = document.getElementById("audio");
+      audio.play();
+  }
+
+</script>
+
+<audio id = "audio">
+    <source src= "sounds/Mallard Duck Call.mp3">
+</audio>
+
 <style>
 .grid-container {
   display: grid;
@@ -93,11 +106,11 @@ body {
     }
 </style>
 
+
+
 <div id="grid-container">
   <figure>
-    <a href="duck1 update.html">
-      <img src="shop img hack wave/shadow duck 1.jpg" />
-    </a>
+    <img src="shop img hack wave/shadow duck 1.jpg" onclick="playSound()"/>
     <figcaption>
       <p>Caption image</p>
     </figcaption>
@@ -145,3 +158,5 @@ body {
     </figcaption>
   </figure>
 </div>
+
+<area shape="rect" coords="" href="" alt="">
