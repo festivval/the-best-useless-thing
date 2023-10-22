@@ -24,6 +24,10 @@
       audio.play();
   }
 
+  function delay (URL) {
+    setTimeout( function() { window.location = URL }, 500 );
+}
+
 </script>
 
 <audio id = "audio">
@@ -136,7 +140,7 @@
 <br>
 <div id="grid-container">
   <figure>
-    <a href="duck1 update.html">
+    <a href="javascript:delay('duck1 update.html')">
     <img src="shop img hack wave/shadow duck 1.jpg" onclick="playSound()"/>
     </a>
     <figcaption>
@@ -144,7 +148,7 @@
     </figcaption>
   </figure>
   <figure>
-    <a href="duck2.html">
+    <a href="javascript:delay('duck2.html')">
       <img src="shop img hack wave/artist duck 3.jpg" onclick="playSound()" />
     </a>
     <figcaption>
@@ -152,7 +156,7 @@
     </figcaption>
   </figure>
   <figure>
-    <a href="duck3.html">
+    <a href="javascript:delay('duck3.html')">
       <img src="shop img hack wave/marriage duck 4.jpg" onclick="playSound()"/>
     </a>
     <figcaption>
@@ -160,7 +164,7 @@
     </figcaption>
   </figure>
   <figure>
-    <a href="duck4.html"
+    <a href="javascript:delay('duck4.html')"
       <img src="shop img hack wave/groovy pirate duck 5.jpg" onclick="playSound()"/>
     </a>
     <figcaption>
