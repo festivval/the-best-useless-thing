@@ -4,10 +4,11 @@
       <meta charset="utf-8">
       <title>Silly Duck</title>
 
+      <!-- Favicon & Header font-->
       <link rel="icon" href="images/duck_sq.jpg">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playpen Sans">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playpen Sans">
     </head>
-<!--Header set up -->
+
     <style>
       body {
         margin:0;
@@ -19,82 +20,79 @@
         margin-right: auto;
       }
 
+      /* Website Header */
       #header {
-        position: fixed;
-        background-color: #91DF96;
-        width:100%;
-        white-space: nowrap;
-        z-index: 100;
-    }
+            position: fixed;
+            background-color: #91DF96;
+            width:100%;
+            white-space: nowrap;
+            z-index: 100;
+      }
+      #header a:link {
+          background-color: #82D788;
 
-    #footer {
-        background-color: #91DF96;
-        width:100%;
-        white-space: nowrap;
-    }
+          color: darkgreen;
+          font-family: 'Playpen Sans', sans-serif;
+          font-size: 40px;
+          text-decoration: none;
 
-    #header a:link {
-        font-family: 'Playpen Sans', sans-serif;
-        font-size: 40px;
-        color: darkgreen;
-        background-color: #82D788;
-        text-decoration: none;
-        padding-right: 30px;
-        padding-left: 30px;
-    }
+          padding-left: 30px;
+          padding-right: 30px;
+      }
+      #header a:visited {
+          color: green;
+          background-color: #82D788;
+      }
+      #header a:hover, a:active {
+          color: yellow;
+          background-color: #79E380;
+      }
 
-    #header a:visited {
-        color: green;
-        background-color: #82D788;
-    }
-    #header a:hover, a:active {
-        color: yellow;
-        background-color: #79E380;
-    }
+      /* Header: Link to Index */
+      #logo {
+          float:left;
+      }
+      #logo p {
+          font-size:35px;
 
-    #logo {
-      float:left;
-    }
-
-    #logo p {
-        float:left;
-        font-size:35px;
-        margin:0;
-        padding-left:5px;
-    }
-    #logo img {
-      float:left;
-        height:50px;
-        padding-top:4px;
-    }
-    
-    #logo:hover {
-      
-      color:yellow;
-    }
-      </style>
+          float:left;
+          margin:0;
+          padding-left:5px;
+      }
+      #logo img {
+          float:left;
+          height:50px;
+          padding-top:4px;
+      }
+      #logo:hover {
+          color:yellow;
+      }
+    </style>
 
     <body bgcolor="#304669">
-      <center><div id='header'>
-        
+
+      <!-- Header -->
+      <center><div id='header'>       
         <a id='logo' style="padding-left:5px;padding-right:15px" title="QUACK" href="index.html">
           <img src='images/duck.jpg'><p>sillyducks</p>
         </a>
         <a title="About Us" href="aboutUs.html">About Us</a>
         <a title="Shop" href="shop hack wave.html">Shop</a>
-     <!-- Duck Image, description & price -->    
       </div></center>
       
-        <br>
-        <br>
-    <h1 style="font-family:century gothic;text-align:center;color:white;">Groovy Pirate Duck</h1>
-<br>
-<br>
+      <br>
+      <br>
+      <!-- Duck Image, description & price --> 
+      <h1 style="font-family:century gothic;text-align:center;color:white;">Groovy Pirate Duck</h1>
+      <br>
+      <br>
 
-<a href="shop hack wave.html">
-  <img src="shop img hack wave/groovy pirate duck 5.jpg" height="auto" width="50%vw" class="center">
-</a>
+      <a href="shop hack wave.html">
+        <img src="shop img hack wave/groovy pirate duck 5.jpg" height="auto" width="50%vw" class="center">
+      </a>
 
-<p style="font-family:century gothic;text-align:center;color:white;font-size:150%;">Slay queen! This duck is quite the fashionista <br> and probaby more fashionable than you. Sorry not sorry.</p>
-<br>
-<h1 style="font-family:century gothic;text-align:center;color:white;">Price: $π.</h1>
+      <p style="font-family:century gothic;text-align:center;color:white;font-size:150%;">Slay queen! This duck is quite the fashionista <br> and probaby more fashionable than you. Sorry not sorry.</p>
+      <br>
+      <h1 style="font-family:century gothic;text-align:center;color:white;">Price: $π.</h1>
+  </body>
+</html>

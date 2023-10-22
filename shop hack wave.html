@@ -6,206 +6,207 @@
       <link rel="icon" href="images/duck_sq.jpg">
       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playpen Sans">
     </head>
+
+    <!-- Set up quack sound -->
+    <script>
+      function playSound()
+      {
+          var audio = document.getElementById("audio");
+          audio.play();
+      }
+
+      function delay (URL) {
+        setTimeout( function() { window.location = URL }, 500 );
+      }
+
+    </script>
+
+    <!-- Audio for quack sound -->
+    <audio id = "audio">
+        <source src= "sounds/Mallard Duck Call Shortened.mp3">
+    </audio>
+
+    <!-- Set up picture grid and caption placement -->
+    <style>
+        .grid-container {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          grid-gap: 10px;
+          grid-template-areas:
+            "figure img figure img figure img figure img"
+        }
+
+        figure {
+          margin:1px;
+          display:inline-block;
+          vertical-align:top;
+          text-align:center;
+          position:relative;
+          padding-bottom:2.8em;
+        }
+        figure img {
+          display:block;
+          width:20vw;
+          height: auto;
+        }
+        figcaption{
+          position:absolute;
+          bottom:0;
+          left:0;
+          right:0;
+          padding:0.2em 2px;
+          min-height:2.4em;
+        }
+        figcaption p {
+          margin:0;
+        }
+        #gridimg{
+          width:50vw;
+          height:50vh;
+          margin:2;
+        }
+        body {
+          text-align:center;
+          color: white;
+          margin:0;
+        }
+
+        /* Website Header */
+        #header {
+          position: fixed;
+          background-color: #91DF96;
+          width:100%;
+          white-space: nowrap;
+          z-index: 100;
+        }
+        #header a:link {
+          background-color: #82D788;
+
+          color: darkgreen;
+          font-family: 'Playpen Sans', sans-serif;
+          font-size: 40px;
+          text-decoration: none;
+
+          padding-left: 30px;
+          padding-right: 30px;
+        }
+        #header a:visited {
+          color: green;
+          background-color: #82D788;
+        }
+        #header a:hover, a:active {
+          color: yellow;
+          background-color: #79E380;
+        }
+
+        /* Header: Link to Index */
+        #logo {
+            float:left;
+        }
+        #logo p {
+            font-size:35px;
+
+            float:left;
+            margin:0;
+            padding-left:5px;
+        }
+        #logo img {
+            float:left;
+            height:50px;
+            padding-top:4px;
+        }
+        #logo:hover {
+            color:yellow;
+        }
+    </style>
+
     <body bgcolor="#304669">
+
+      <!-- Header -->
       <center><div id='header'>
-        
         <a id='logo' style="padding-left:5px;padding-right:15px" title="QUACK" href="index.html">
           <img src='images/duck.jpg'><p>sillyducks</p>
         </a>
         <a title="About Us" href="aboutUs.html">About Us</a>
         <a title="Shop" href="shop hack wave.html">Shop</a>
-        
       </div></center>
-<!-- Set up quack sound -->
-<script>
-  function playSound()
-  {
-      var audio = document.getElementById("audio");
-      audio.play();
-  }
 
-  function delay (URL) {
-    setTimeout( function() { window.location = URL }, 500 );
-}
 
-</script>
-
-<audio id = "audio">
-    <source src= "sounds/Mallard Duck Call Shortened.mp3">
-</audio>
-
-<!-- Set up picture grid and caption placement -->
-<style>
-    .grid-container {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      grid-gap: 10px;
-      grid-template-areas:
-        "figure img figure img figure img figure img"
-    }
-
-    figure {
-      margin:1px;
-      display:inline-block;
-      vertical-align:top;
-      text-align:center;
-      position:relative;
-      padding-bottom:2.8em;
-    }
-    figure img {
-      display:block;
-      width:20vw;
-      height: auto;
-    }
-    figcaption{
-      position:absolute;
-      bottom:0;
-      left:0;
-      right:0;
-      padding:0.2em 2px;
-      min-height:2.4em;
-    }
-    figcaption p {
-      margin:0;
-    }
-    #gridimg{
-      width:50vw;
-      height:50vh;
-      margin:2;
-    }
-    body {
-      text-align:center;
-      color: white;
-      margin:0;
-    }
-
-    #header {
-            position: fixed;
-            background-color: #91DF96;
-            width:100%;
-            white-space: nowrap;
-            z-index: 100;
-        }
-
-        #footer {
-            background-color: #91DF96;
-            width:100%;
-            white-space: nowrap;
-        }
-
-        #header a:link {
-            font-family: 'Playpen Sans', sans-serif;
-            font-size: 40px;
-            color: darkgreen;
-            background-color: #82D788;
-            text-decoration: none;
-            padding-right: 30px;
-            padding-left: 30px;
-        }
-
-        #header a:visited {
-            color: green;
-            background-color: #82D788;
-        }
-        #header a:hover, a:active {
-            color: yellow;
-            background-color: #79E380;
-        }
-
-        #logo {
-        float:left;
-        }
-
-        #logo p {
-            float:left;
-            font-size:35px;
-            margin:0;
-            padding-left:5px;
-        }
-        #logo img {
-        float:left;
-            height:50px;
-            padding-top:4px;
-        }
-        
-        #logo:hover {
-        
-        color:yellow;
-        }
-</style>
     <br>
     <br>
     <br>
-  <h1 style="font-family:century gothic;text-align:center;color:white;">Buy a silly duck!</h1>
-<br>
-<br>
+    <h1 style="font-family:century gothic;text-align:center;color:white;">Buy a silly duck!</h1>
+    <br>
+    <br>
 
-<!-- Put in images and captions. Delay link redirect so sound plays. Link all duck images to description pages -->
-<div id="grid-container">
-  <figure>
-    <a href="javascript:delay('duck1 update.html')">
-    <img src="shop img hack wave/shadow duck 1.jpg" onclick="playSound()"/>
-    </a>
-    <figcaption>
-      <p>Shadow Duck - SOLD OUT</p>
-    </figcaption>
-  </figure>
-  <figure>
-    <a href="javascript:delay('duck2.html')">
-      <img src="shop img hack wave/artist duck 3.jpg" onclick="playSound()" />
-    </a>
-    <figcaption>
-      <p>Artist Duck - SOLD OUT</p>
-    </figcaption>
-  </figure>
-  <figure>
-    <a href="javascript:delay('duck3.html')">
-      <img src="shop img hack wave/marriage duck 4.jpg" onclick="playSound()"/>
-    </a>
-    <figcaption>
-      <p>Marriage Duck - SOLD OUT</p>
-    </figcaption>
-  </figure>
-  <figure>
-    <a href="javascript:delay('duck4.html')">
-      <img src="shop img hack wave/groovy pirate duck 5.jpg" onclick="playSound()"/>
-    </a>
-    <figcaption>
-      <p>Groovy Pirate Duck - SOLD OUT</p>
-    </figcaption>
-  </figure>
-  <figure>
-    <a href="javascript:delay('duck5.html')">
-      <img src="shop img hack wave/darth duck 2.jpeg" onclick="playSound()"/>
-    </a>
-    <figcaption>
-      <p>Darth Vader Duck - SOLD OUT</p>
-    </figcaption>
-  </figure>
-  <figure>
-    <a href="javascript:delay('duck6.html')">
-      <img src="shop img hack wave/duck 6.jpg" onclick="playSound()"/>
-    </a>
-    <figcaption>
-      <p>Batman Duck - SOLD OUT</p>
-    </figcaption>
-  </figure>
-  <figure>
-    <a href="javascript:delay('duck7.html')">
-    <img src="shop img hack wave/duck 7.jpg" onclick="playSound()"/>
-    </a>
-    <figcaption>
-      <p>Yeehaw Duck - SOLD OUT</p>
-    </figcaption>
-  </figure>
-  <figure>
-    <a href="javascript:delay('duck8.html')">
-    <img src="shop img hack wave/duck 8.jpg" onclick="playSound()"/>
-    </a>
-    <figcaption>
-      <p>Liberty Duck - SOLD OUT</p>
-    </figcaption>
-  </figure>
-</div>
+    <!-- Put in images and captions. Delay link redirect so sound plays. Link all duck images to description pages -->
+    <div id="grid-container">
+      <figure>
+        <a href="javascript:delay('duck1 update.html')">
+        <img src="shop img hack wave/shadow duck 1.jpg" onclick="playSound()"/>
+        </a>
+        <figcaption>
+          <p>Shadow Duck - SOLD OUT</p>
+        </figcaption>
+      </figure>
+      <figure>
+        <a href="javascript:delay('duck2.html')">
+          <img src="shop img hack wave/artist duck 3.jpg" onclick="playSound()" />
+        </a>
+        <figcaption>
+          <p>Artist Duck - SOLD OUT</p>
+        </figcaption>
+      </figure>
+      <figure>
+        <a href="javascript:delay('duck3.html')">
+          <img src="shop img hack wave/marriage duck 4.jpg" onclick="playSound()"/>
+        </a>
+        <figcaption>
+          <p>Marriage Duck - SOLD OUT</p>
+        </figcaption>
+      </figure>
+      <figure>
+        <a href="javascript:delay('duck4.html')">
+          <img src="shop img hack wave/groovy pirate duck 5.jpg" onclick="playSound()"/>
+        </a>
+        <figcaption>
+          <p>Groovy Pirate Duck - SOLD OUT</p>
+        </figcaption>
+      </figure>
+      <figure>
+        <a href="javascript:delay('duck5.html')">
+          <img src="shop img hack wave/darth duck 2.jpeg" onclick="playSound()"/>
+        </a>
+        <figcaption>
+          <p>Darth Vader Duck - SOLD OUT</p>
+        </figcaption>
+      </figure>
+      <figure>
+        <a href="javascript:delay('duck6.html')">
+          <img src="shop img hack wave/duck 6.jpg" onclick="playSound()"/>
+        </a>
+        <figcaption>
+          <p>Batman Duck - SOLD OUT</p>
+        </figcaption>
+      </figure>
+      <figure>
+        <a href="javascript:delay('duck7.html')">
+        <img src="shop img hack wave/duck 7.jpg" onclick="playSound()"/>
+        </a>
+        <figcaption>
+          <p>Yeehaw Duck - SOLD OUT</p>
+        </figcaption>
+      </figure>
+      <figure>
+        <a href="javascript:delay('duck8.html')">
+        <img src="shop img hack wave/duck 8.jpg" onclick="playSound()"/>
+        </a>
+        <figcaption>
+          <p>Liberty Duck - SOLD OUT</p>
+        </figcaption>
+      </figure>
+    </div>
 
-<area shape="rect" coords="" href="" alt="">
+    <area shape="rect" coords="" href="" alt="">
+  </body>
+</html>
