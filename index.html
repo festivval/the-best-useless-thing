@@ -24,8 +24,39 @@
         margin-top: 15vh;
         margin-bottom: 0;
         line-height: 25vh;
-        text-shadow: -0.5vh 0.5vh #4BA4FF;
+        text-shadow: -0.5h 0.2vh #4BA4FF;
         min-width: 100px;
+        animation-name: titleColor;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+    }
+    @keyframes titleColor {
+      0% {
+        color: #0079F3;
+        text-shadow: -0.5vh 0.2vh #4BA4FF;
+      }
+      50% {
+        color: #006BD6;
+        text-shadow: -0.5vh 0.5vh #3598FE;
+      }
+      100% {
+        color: #0079F3;
+        text-shadow: -0.5vh 0.2vh #4BA4FF;
+      }
+    }
+
+    #moving-duck {
+      position:absolute;
+      -webkit-animation: mover 2s infinite  alternate;
+      animation: mover 2s infinite  alternate;
+    }
+    @-webkit-keyframes mover {
+        0% { transform: translateY(-20px); }
+        100% { transform: translateY(-20px); }
+    }
+    @keyframes mover {
+        0% { transform: translateY(-20px); }
+        100% { transform: translateY(90vh); }
     }
 
     #header {
@@ -110,8 +141,11 @@
       <a title="Shop" href="shop hack wave.html">Shop</a>
       
     </div></center>
+    
+    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+      <img id='moving-duck' src="shop img hack wave/duck 6 transparent.png" height="15%vh" width="auto" class="img"/>
+    </a>
     <br>
-
     <center>
       <h1>SILLY<br>DUCKS<br>SHOP</h1>
       <br><br>
@@ -119,6 +153,8 @@
       <br><br><br><br>
       <div id="footer"><br></div>
     </center>
+
+    
    
 </body>
 </html>
