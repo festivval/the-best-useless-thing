@@ -11,11 +11,24 @@
     body {
         padding: 0;
         margin: 0;
+        background-color:#69c9ff;
         background-image: url("images/bg.svg");
         background-image: url("images/bg.svg"), linear-gradient(#a2fff3 50%, #69c9ff 50%);
         background-repeat:repeat-x;
         background-attachment:fixed;
         background-position: center;
+        animation: waves 10s ease-in-out infinite forwards;
+    }
+    @keyframes waves {
+      0% {
+        background-position-y:-2vh;
+      }
+      50% {
+        background-position-y:8vh;
+      }
+      100% {
+        background-position-y:-2vh;
+      }
     }
     
     h1 {
