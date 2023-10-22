@@ -4,21 +4,26 @@
     <meta charset="utf-8">
     <title>sillyducks shop</title>
 
+    <!-- Favicon & Header font-->
     <link rel="icon" href="images/duck_sq.jpg">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playpen Sans">
-  
+  </head>
+
   <style>
     body {
         padding: 0;
         margin: 0;
+
         background-color:#69c9ff;
         background-image: url("images/bg.svg");
         background-image: url("images/bg.svg"), linear-gradient(#a2fff3 50%, #69c9ff 50%);
         background-repeat:repeat-x;
         background-attachment:fixed;
         background-position: center;
+
         animation: waves 10s ease-in-out infinite forwards;
-    }
+    } 
+    /* Background Wave Animation */
     @keyframes waves {
       0% {
         background-position-y:-2vh;
@@ -31,14 +36,18 @@
       }
     }
     
+    /* Title Text Format */
     h1 {
         color:#0079F3;
+        text-shadow: -0.5h 0.2vh #4BA4FF;
+
         font-size: 30vh;
+        line-height: 25vh;
+
+        min-width: 100px;
         margin-top: 15vh;
         margin-bottom: 0;
-        line-height: 25vh;
-        text-shadow: -0.5h 0.2vh #4BA4FF;
-        min-width: 100px;
+        
         animation-name: titleColor;
         animation-duration: 4s;
         animation-iteration-count: infinite;
@@ -58,6 +67,7 @@
       }
     }
 
+    /* Moving Duck Animation */
     #moving-duck {
       position:absolute;
       -webkit-animation: mover 2s infinite  alternate;
@@ -72,102 +82,105 @@
         100% { transform: translateY(90vh); }
     }
 
+    /* Website Header */
     #header {
-            position: fixed;
-            background-color: #91DF96;
-            width:100%;
-            white-space: nowrap;
-            z-index: 100;
-        }
-
-        #footer {
-            background-color: #91DF96;
-            width:100%;
-            white-space: nowrap;
-        }
-
-        #header a:link {
-            font-family: 'Playpen Sans', sans-serif;
-            font-size: 40px;
-            color: darkgreen;
-            background-color: #82D788;
-            text-decoration: none;
-            padding-right: 30px;
-            padding-left: 30px;
-        }
-
-        #header a:visited {
-            color: green;
-            background-color: #82D788;
-        }
-        #header a:hover, a:active {
-            color: yellow;
-            background-color: #79E380;
-        }
-
-        #logo {
-        float:left;
-        }
-
-        #logo p {
-            float:left;
-            font-size:35px;
-            margin:0;
-            padding-left:5px;
-        }
-        #logo img {
-        float:left;
-            height:50px;
-            padding-top:4px;
-        }
-        
-        #logo:hover {
-        
-        color:yellow;
-        }
-
-    #button {
+      position: fixed;
+      background-color: #91DF96;
+      width:100%;
+      white-space: nowrap;
+      z-index: 100;
+    }
+    #header a:link {
       background-color: #82D788;
-      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-      color:#F3F3F3;
-      padding: 10px;
-      font-size:8vh;
+
+      color: darkgreen;
+      font-family: 'Playpen Sans', sans-serif;
+      font-size: 40px;
       text-decoration: none;
-      border-radius: 20px;
+
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+    #header a:visited {
+      color: green;
+      background-color: #82D788;
+    }
+    #header a:hover, a:active {
+      color: yellow;
+      background-color: #79E380;
     }
 
+    /* Header: Link to Index */
+    #logo {
+      float:left;
+    }
+    #logo p {
+      font-size:35px;
+
+      float:left;
+      margin:0;
+      padding-left:5px;
+    }
+    #logo img {
+      float:left;
+      height:50px;
+      padding-top:4px;
+    }
+    #logo:hover {
+      color:yellow;
+    }
+
+    /* Go to Shop Button */
+    #button {
+      background-color: #82D788;
+
+      color:#F3F3F3;
+      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size:8vh;
+      text-decoration: none;
+      
+      padding: 10px;
+      border-radius: 20px;
+    }
     #button:hover {
       background-color: #79E380;
       color:white;
     }
+
+    #footer {
+      background-color: #91DF96;
+      width:100%;
+      white-space: nowrap;
+    }
   
   </style>
-  </head>
+  
   <body>
-
+    <!-- Header -->
     <center><div id='header'>
-        
       <a id='logo' style="padding-left:5px;padding-right:15px" title="QUACK" href="index.html">
         <img src='images/duck.jpg'><p>sillyducks</p>
       </a>
       <a title="About Us" href="aboutUs.html">About Us</a>
       <a title="Shop" href="shop hack wave.html">Shop</a>
-      
     </div></center>
     
+    <!-- Moving Duck Image -->
     <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
       <img id='moving-duck' src="shop img hack wave/duck 6 transparent.png" height="15%vh" width="auto" class="img"/>
     </a>
     <br>
+
     <center>
+      <!-- Title Text -->
       <h1>SILLY<br>DUCKS<br>SHOP</h1>
       <br><br>
+      <!-- Shop Button -->
       <a id=button href="shop hack wave.html">Shop Now</a>
       <br><br><br><br>
+      <!-- Footer -->
       <div id="footer"><br></div>
     </center>
-
-    
    
 </body>
 </html>

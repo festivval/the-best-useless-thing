@@ -3,11 +3,10 @@
     <head>
         <title>About Us</title>
 
+        <!-- Favicon & Header font-->
         <link rel="icon" href="images/duck_sq.jpg">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playpen Sans">
-        
     </head>
-    
 
     <style>
         body
@@ -16,6 +15,7 @@
             margin:0;
         }
 
+           /* Website Header */
         #header {
             position: fixed;
             background-color: #91DF96;
@@ -23,23 +23,17 @@
             white-space: nowrap;
             z-index: 100;
         }
-
-        #footer {
-            background-color: #91DF96;
-            width:100%;
-            white-space: nowrap;
-        }
-
         #header a:link {
+            background-color: #82D788;
+
+            color: darkgreen;
             font-family: 'Playpen Sans', sans-serif;
             font-size: 40px;
-            color: darkgreen;
-            background-color: #82D788;
             text-decoration: none;
-            padding-right: 30px;
-            padding-left: 30px;
-        }
 
+            padding-left: 30px;
+            padding-right: 30px;
+        }
         #header a:visited {
             color: green;
             background-color: #82D788;
@@ -49,38 +43,63 @@
             background-color: #79E380;
         }
 
+        /* Header: Link to Index */
         #logo {
-        float:left;
-        }
-
-        #logo p {
             float:left;
+        }
+        #logo p {
             font-size:35px;
+
+            float:left;
             margin:0;
             padding-left:5px;
         }
         #logo img {
-        float:left;
+            float:left;
             height:50px;
             padding-top:4px;
         }
-        
         #logo:hover {
-        
-        color:yellow;
+            color:yellow;
         }
+
+        /* Go to Shop Button */
+        #button {
+            background-color: #82D788;
+
+            color:#F3F3F3;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size:8vh;
+            text-decoration: none;
+            
+            padding: 10px;
+            border-radius: 20px;
+        }
+        #button:hover {
+            background-color: #79E380;
+            color:white;
+        }
+
+        #footer {
+            background-color: #91DF96;
+            width:100%;
+            white-space: nowrap;
+        }
+
     </style>
    
     <body>  
+        <!-- Header -->
         <center><div id='header'>
-        
             <a id='logo' style="padding-left:5px;padding-right:15px" title="QUACK" href="index.html">
               <img src='images/duck.jpg'><p>sillyducks</p>
             </a>
             <a title="About Us" href="aboutUs.html">About Us</a>
             <a title="Shop" href="shop hack wave.html">Shop</a>
-            
-          </div></center>
+          </div>
+        </center>
+
+        <!-- About Us Text -->
         <br><br><br><br>
         <center>
             <p>
@@ -95,10 +114,10 @@
             </p>
         </center>
         
+        <!-- About Us Image -->
         <center>
             <img src="images/peabody-at-home-peabody-rubber-duck-PB-015_lrg.jpg" style="border-style:double;" alt="images/duck.jpg">
         </center>
-       
         
     </body>
 </html>
